@@ -1,0 +1,28 @@
+.c-section__title-wrapper {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 24px;
+    font-family: var(--font-family-sub);
+    font-weight: Light;
+    color: var(--color-font-green);
+
+    .c-title__name::after {
+        content: "";
+        width: auto;
+        height: 2px;
+        display: block;
+        background-color: var(--color-font-green);
+        margin: 0 auto;
+        bottom: 0px;
+        position: relative; /* 文字との距離 */
+        top: -9px; /* 文字との距離 */
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .c-section__title-wrapper {
+        font-size: 36px;
+    }
+}
+

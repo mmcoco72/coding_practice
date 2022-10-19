@@ -1,0 +1,62 @@
+.concept__img {
+    /* 右寄せ */
+    margin-right: 0;
+    margin-left: auto;
+
+    display: block;
+    width: 294px;
+    height: 272px;
+    flex-shrink: 0;
+}
+
+@media screen and (min-width: 1080px) {
+    .p-concept {
+        display: flex;
+        flex-direction: row-reverse; /* 左右入れ替え */
+        justify-content: space-between;
+    }
+
+    .p-concept__img {
+        width: 100%; 
+        height: auto;
+        padding-left: 67px;
+    }
+
+    .p-concept-contents {
+        width: 413px; /* テキスト幅優先 画像可変 */
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+.concept_contents-wrapper {
+    .p-concept-contents__title-ja {
+        font-weight: 500;
+        font-size: 28px;
+        font-family: var(--font-family-base);
+        letter-spacing: 0.06em;
+        color: var(--color-font-green);
+        line-height: 1.75;
+
+        span {
+            display: block;
+        }
+    }
+    
+    .p-concept-contents__title-en {
+        font-size: 64px;
+        font-family: var(--font-family-sub);
+        letter-spacing: 0.08em;
+        color: var(--color-font-green);
+        display: inline-block;
+    }
+
+    .p-concept__text-wrapper {
+        margin-top: 16px;
+        color: var(--color-font-base);
+
+        .p-concept__text-br {
+            display: block;
+        }
+    }
+}

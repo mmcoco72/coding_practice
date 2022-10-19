@@ -1,0 +1,16 @@
+:root {
+    letter-spacing: 0.08em;
+}
+
+html {
+    line-height: 1.8;
+    font-size: 14px;
+    font-family: var(--font-family-base);
+    background-color: var(--color-background);
+}
+
+@media screen and (min-width: 768px) {
+body {
+    font-size: 16px;
+}
+}

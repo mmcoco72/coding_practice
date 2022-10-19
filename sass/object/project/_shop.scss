@@ -1,0 +1,53 @@
+.p-shop__info {
+    margin: 24px 0 64px 0;
+    color: var(--color-font-base);
+
+    @media screen and (min-width: 1080px) {
+        width: 396px;
+        margin: 0;
+    }
+
+    .p-shop__name {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .p-shop__content {
+        margin: 16px 0 16px;
+    }
+
+    .p-shop__address {
+        line-height: 2;
+    }
+    
+    .p-shop__tel {
+        display: block;
+    }
+}
+
+.p-shop__img {
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+}
+
+@media screen and (min-width: 1080px) {
+    .p-shop__contents {
+        width: 92%;
+        display: flex;
+        gap: 64px ;
+        justify-content: flex-start;
+        align-items: center;
+
+        .p-shop__img-wrapper {
+            width: calc(100% - 396px);
+            margin: 0 auto;
+    
+            @media screen and (min-width: 1080px) {
+                .p-shop__img {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }    
+    }
+}

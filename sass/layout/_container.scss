@@ -1,0 +1,22 @@
+.l-top-container {
+    width: 90%;
+    max-width: var(--width-content);
+    margin: 0 auto;
+
+    /* concept & menu */
+    .main-background-cloror {
+        background-color: var(--color-background);
+        /* 背景色を画面幅に調整 */
+        margin-right: calc(50% - 50vw);
+        margin-left: calc(50% - 50vw);
+        /* 子要素のはみ出しを収める */
+        padding-right: calc(50vw - 50%);
+        padding-left: calc(50vw - 50%);
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .l-top-container {
+        width: 80%;
+    }
+}

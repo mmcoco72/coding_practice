@@ -1,0 +1,67 @@
+.menu-contents {
+
+    .menu-top {
+        display: table;
+        width: 100%;
+        margin-top: 24px;
+
+        .menu__name, .menu__price {
+            font-size: 26px;
+            font-family: var(--font-family-sub);
+            letter-spacing: 0.08em;
+        }
+
+        .menu__price {
+            display: table-cell;
+            text-align: right;
+        }
+
+        .menu__name {
+        display: table-cell;
+        text-align: left;
+    }
+    }
+
+    .menu__text {
+        margin-top: 16px;
+    }
+}
+
+.p-menu__img-wrapper {
+    .p-menu__img, .img-sub {
+        /* 画面幅フル */
+        width: 100vw; 
+        margin: 0 calc(50% - 50vw);
+    }
+    
+    @media screen and (min-width: 1080px) {
+        .p-menu__img {
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+    }
+}
+
+.p-menu:not(:first-of-type) {
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 1080px) {
+    .p-menus {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 56px 16px;
+
+        .p-menu {
+            width: calc(calc(100% - 56px) / 2);
+            max-width: 509px;
+
+            &:not(:first-of-type) {
+                margin-top: 0;
+            }
+        }
+    }
+}
